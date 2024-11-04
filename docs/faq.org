@@ -214,8 +214,8 @@ functionality, and syntax checking, all in one:
    can be installed this way).
 4. Run ~$ doom sync~ on the command line.
 5. Restart Emacs.
-6. (Optional) If Emacs fails to find your LSP server, you may need to run ~$
-   doom env~ to regenerate your envvar file (which contains your =$PATH=, which
+6. (Optional) If Emacs fails to find your LSP server, you may need to run ~$ doom env~
+   to regenerate your envvar file (which contains your =$PATH=, which
    tells Emacs where to find programs on your system).
 
 *** Potential issues
