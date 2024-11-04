@@ -472,8 +472,8 @@ issues and may give you some clues as to what is wrong.
 ** Doom fails to find executables (or inherit my shell's =$PATH=)
 The three most common causes for =$PATH= issues in Doom are:
 
-1. Your shell configuration doesn't configure =$PATH= correctly. Run ~$ which
-   <PROGRAM>~ in your shell. If it doesn't emit the path you expect (or any path
+1. Your shell configuration doesn't configure =$PATH= correctly. Run ~$ which <PROGRAM>~
+   in your shell. If it doesn't emit the path you expect (or any path
    at all) then you need to modify you shell config to do so correctly.
 2. Your app launcher (rofi, albert, docky, dmenu, sxhkd, etc) is launching Emacs
    with the wrong shell, either because it defaults to a different shell from
