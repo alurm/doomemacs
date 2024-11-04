@@ -200,7 +200,7 @@ mode-line.
 :END:
 This is frequently asked: how to transform Doom Emacs into an IDE for some
 programming language. In almost all cases, it's recommended that you enable
-Doom's LSP support and install a supported LSP client.
+Doom's LSP support and install a supported LSP server.
 
 This provides code completion, lookup {definition,references,documentation}
 functionality, and syntax checking, all in one:
@@ -209,7 +209,7 @@ functionality, and syntax checking, all in one:
 2. Enable the ~+lsp~ flag on the ~:lang~ module corresponding to the language
    you want LSP support for. E.g. For python, enable [[doom-module::lang python +lsp]]. For
    rust, enable [[doom-module::lang rust +lsp]]. ([[id:01cffea4-3329-45e2-a892-95a384ab2338][How do I enable module flags?]])
-3. Install [[https://emacs-lsp.github.io/lsp-mode/page/languages/][a supported LSP client]] on your system using your OS package manager
+3. Install [[https://emacs-lsp.github.io/lsp-mode/page/languages/][a supported LSP server]] on your system using your OS package manager
    OR from within Emacs using ~M-x lsp-install-server~ (warning: not all servers
    can be installed this way).
 4. Run ~$ doom sync~ on the command line.
@@ -232,7 +232,7 @@ functionality, and syntax checking, all in one:
    ;; For Elisp gurus: Doom provides MAJOR-MODE-local-vars-hook, and we use it
    ;; instead of MAJOR-MODE-hook because it runs later in the mode's startup
    ;; process (giving other functionality or packages -- like direnv -- time to
-   ;; configure the LSP client).
+   ;; configure the LSP server).
    #+end_src
 
 2. Some languages have alternatives that are superior to the LSP offerings (such
