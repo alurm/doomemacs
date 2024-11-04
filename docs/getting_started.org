@@ -182,17 +182,6 @@ environment.systemPackages = with pkgs; [
 ];
 #+END_SRC
 
-Installing Emacs 28+ will require [[https://github.com/nix-community/emacs-overlay/issues][nix-community/emacs-overlay]]:
-#+BEGIN_SRC nix
-nixpkgs.overlays = [
-  (import (builtins.fetchTarball https://github.com/nix-community/emacs-overlay/archive/master.tar.gz))
-];
-
-environment.systemPackages = [
-  pkgs.emacsGcc  # Installs Emacs 28 + native-comp
-];
-#+END_SRC
-
 **** openSUSE
 ***** Emacs 27.1
 Emacs can be installed from the [[https://software.opensuse.org/download.html?project=editors&package=emacs][package list]], or manually via zypper.
